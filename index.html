@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS example -->
+    <style>
+        .internal { color: teal; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <b>My Portfolio</b>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <!-- Inline CSS example -->
+        <h1 id="title" class="highlight"
+            style="text-transform: uppercase;">
+            Hi, I'm Shoriful Islam!
+        </h1>
+        <p class="internal">Software Engineering Student & AI/ML Engineer</p>
+        <img src="efty.jpeg"
+             alt="Profile photo" width="120">
+    </header>
+
+    <main>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>I studied Computer Science at Deffodil International University.</p>
+            <p class="tip">I enjoy study and machine learning.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>My Projects</h2>
+            <div class="columns">
+                <article>
+                    <h3>AI based Medical Image Analysis</h3>
+                    <p>Machine learning project.</p>
+                </article>
+                <article>
+                    <h3>Investory management</h3>
+                    <p>Software base project.</p>
+                </article>
+                <article>
+                    <h3>Take madicine management</h3>
+                    <p>Software base project.</p>
+                </article>
+            </div>
+
+            <h3>Skills</h3>
+            <ol class="skills">
+                <li>HTML & CSS</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+            </ol>
+
+            <p>Visit my <a href="https://github.com/atikHR"
+                target="_blank">GitHub</a></p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label>Name:
+                    <input type="text" placeholder="Your name">
+                </label><br><br>
+
+                <label>Password:
+                    <input type="password">
+                </label><br><br>
+
+                <label>Interest:
+                    <select>
+                        <option>Web Development</option>
+                        <option>Machine Learning</option>
+                    </select>
+                </label><br><br>
+
+                <label>Upload photo:
+                    <input type="file">
+                </label><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Atik Hasan &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

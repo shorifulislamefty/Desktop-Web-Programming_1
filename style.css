@@ -1,0 +1,136 @@
+* Universal selector and box model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+/* Element and group selectors */
+h2, h3 {
+    color: #2457a6;
+}
+
+/* Navigation */
+nav {
+    background: #172a46;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+}
+
+/* ID, class and element selectors */
+#title {
+    color: darkblue;
+}
+
+.highlight {
+    text-shadow: 1px 1px 3px gray;
+}
+
+header {
+    background: #bde8f5;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Box model, border and fonts */
+.card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+/* Compound and descendant selectors */
+p.tip {
+    color: #b74242;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* Flexbox layout */
+.columns {
+    display: block;
+    gap: 40px;
+}
+
+article {
+    flex: 1;
+    padding: 15px;
+    background: #dceaff;
+    margin: 10px;
+}
+
+/* List styling */
+.skills {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Attribute and pseudo-class selectors */
+input[type="text"] {
+    border: 2px solid teal;
+    padding: 8px;
+}
+
+a:hover, input[type="submit"]:hover {
+    color: white;
+    background: #087f8c;
+}
+
+/* Pseudo-element */
+h2::first-letter {
+    color: blue;
+    font-size: 1.4em;
+}
+
+/* Float example */
+footer {
+    background: #172a46;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+}
+
+/* Cascade and specificity example */
+p {
+    color: #444;
+}
+
+#title {
+    color: darkblue;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
